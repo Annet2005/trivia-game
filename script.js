@@ -1,9 +1,11 @@
 const questions = [
-    "What is my favorite beverage (tea, coffee, milk)?",
-    "What is my comforting food (Noodles, Biriyani, Chicken roll)?",
-    "What is one thing that always makes me smile (accessory, food, pets)?",
-    "What kind of person am I (introvert, extrovert, both)?",
-    "Places I love most (mountains, beach, waterfall)?"
+    "What is Annet’s favorite beverage (tea, coffee, milk)?",
+    "What is Annet’s favorite comforting food (Noodles, Biriyani, Chicken roll)?",
+    "What is one thing that always makes Annet smile (accessory, food, pets)?",
+    "What kind of person is Annet (introvert, extrovert, both)?",
+    "What is Annet’s favorite place (mountains, beach, waterfall)?"
+];
+
 ];
 
 const answers = ["coffee", "biriyani", "pets", "both", "waterfall"];
