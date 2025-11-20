@@ -6,19 +6,18 @@ const questions = [
     "What is Annet’s favorite place (mountains, beach, waterfall)?"
 ];
 
-];
-
 const answers = ["coffee", "biriyani", "pets", "both", "waterfall"];
 
 let index = 0;
 let score = 0;
 
-// DOM Elements
+// DOM elements
 const questionBox = document.getElementById("question");
 const answerInput = document.getElementById("answer");
 const submitBtn = document.getElementById("submitBtn");
 const scoreBox = document.getElementById("score");
 
+// Load first question
 questionBox.textContent = questions[index];
 
 submitBtn.addEventListener("click", () => {
@@ -29,7 +28,7 @@ submitBtn.addEventListener("click", () => {
     }
 
     index++;
-    answerInput.value = ""; // clear input
+    answerInput.value = "";
 
     if (index < questions.length) {
         questionBox.textContent = questions[index];
@@ -39,12 +38,10 @@ submitBtn.addEventListener("click", () => {
 });
 
 function showFinalScore() {
-    // Hide question and input
     questionBox.style.display = "none";
     answerInput.style.display = "none";
     submitBtn.style.display = "none";
 
-    // Show score
     scoreBox.style.display = "block";
     scoreBox.innerHTML = `Your Final Score: <b>${score}/${questions.length}</b>`;
 }
